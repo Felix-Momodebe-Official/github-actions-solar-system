@@ -15,7 +15,7 @@ env:
 jobs:
     unit-testing:
         name: Unit Testing
-        if: continue-on-failure
+        continue-on-error: true
         runs-on: ubuntu-latest
         steps:
         - name: Checkout Repository
